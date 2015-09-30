@@ -1,0 +1,18 @@
+
+require:
+   yamljs
+
+yaml-plugin{@, options} =
+   @macros.format.parsers.yaml{contents} =
+      yamljs.parse{contents}
+   @macros.include.extensions.yaml{engine, file, contents} =
+      engine.setenv{yamljs.parse{contents}}
+      ""
+
+main{*match} =
+   {@, options = {=}} when @is-quaint-engine ->
+      yaml-plugin{@, options}
+   {options = {=}} ->
+      {@} -> main{@, options}
+
+provide = main
