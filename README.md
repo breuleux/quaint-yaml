@@ -28,6 +28,8 @@ a: 1
 b: 7
 ```
 
+**file.q**
+
 ```quaint
 plugins :: yaml javascript
 
