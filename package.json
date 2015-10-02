@@ -7,7 +7,7 @@
     "type": "git",
     "url": "https://github.com/breuleux/quaint-yaml"
   },
-  "keywords": [],
+  "keywords": ["quaint", "quaint-plugin", "yaml"],
   "author": "Olivier Breuleux",
   "license": "MIT",
   "main": "./lib/index.js",
@@ -16,9 +16,9 @@
     "yamljs": "^0.2.4"
   },
   "devDependencies": {
-    "earlgrey": ">=0.0.12",
+    "earlgrey": ">=0.0.13",
     "mocha": "^2.2.1",
-    "earl-mocha": ">=0.0.2"
+    "earl-mocha": ">=0.0.3e"
   },
   "scripts": {
     "refresh": "earl compile -5vso lib/ src/",
