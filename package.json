@@ -1,13 +1,17 @@
 {
   "name": "quaint-yaml",
   "description": "YAML format for Quaint",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "format": "cjs",
   "repository": {
     "type": "git",
     "url": "https://github.com/breuleux/quaint-yaml"
   },
-  "keywords": ["quaint", "quaint-plugin", "yaml"],
+  "keywords": [
+    "quaint",
+    "quaint-plugin",
+    "yaml"
+  ],
   "author": "Olivier Breuleux",
   "license": "MIT",
   "main": "./lib/index.js",
