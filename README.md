@@ -2,7 +2,7 @@
 quaint-yaml
 ===========
 
-YAML support for the `include` and `format` macros in
+YAML support for the `data`, `include` and `format` macros in
 [Quaint](http://breuleux.github.io/quaint).
 
 This will make a table with two rows and two columns:

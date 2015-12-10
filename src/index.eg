@@ -8,6 +8,8 @@ yaml-plugin{@, options} =
    @macros.include.extensions.yaml{engine, file, contents} =
       engine.setenv{yamljs.parse{contents}}
       ""
+   @macros.data.extensions.yaml{engine, file, contents} =
+      yamljs.parse{contents}
 
 main{*match} =
    {@, options = {=}} when @is-quaint-engine ->
