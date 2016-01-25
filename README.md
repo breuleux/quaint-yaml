@@ -2,15 +2,23 @@
 quaint-yaml
 ===========
 
-YAML support for the `data`, `include` and `format` macros in
+YAML support for the `data` and `include` macros in
 [Quaint](http://breuleux.github.io/quaint).
+
+
+## Install
+
+    quaint --setup yaml
+
+
+## Usage
 
 This will make a table with two rows and two columns:
 
 ```quaint
 plugins :: yaml
 
-format yaml:table
+format table :: data yaml ::
   -
     - one
     - two
@@ -31,11 +39,9 @@ b: 7
 **file.q**
 
 ```quaint
-plugins :: yaml javascript
-
 include :: data.yaml
 
-{a + b} == 8
+{a} + {b} == 8
 ```
 
 
